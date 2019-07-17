@@ -1,0 +1,36 @@
+{
+	"name": "squadron-api/file-uploads",
+	"description": "Squadron file uploads package",
+	"keywords": ["laravel", "squadron", "files", "upload", "api"],
+	"license": "MIT",
+	"authors": [{
+		"name": "Andrey Novikov",
+		"email": "andrew@7glyphs.com",
+		"homepage": "https://7glyphs.com",
+		"role": "Developer"
+	}],
+	"require": {
+		"php": ">=7.2",
+		"squadron-api/base": "0.0.*"
+	},
+    "require-dev": {
+        "squadron-api/test-helpers": "~0.0.3"
+    },
+	"autoload": {
+		"psr-4": {
+			"Squadron\\FileUploads\\": "src/"
+		}
+	},
+    "autoload-dev": {
+        "psr-4": {
+            "Squadron\\FileUploads\\Tests\\": "tests/"
+        }
+    },
+	"extra": {
+		"laravel": {
+			"providers": [
+				"Squadron\\FileUploads\\ServiceProvider"
+			]
+		}
+	}
+}
